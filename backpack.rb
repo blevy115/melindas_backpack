@@ -28,8 +28,8 @@ class Backpack
       @items << 'shirt'
     end
 
-    # Ensure gym shoes are added to backpack if it's a gym day
-    # Gotta get to the gym on Tuesdays and Thursdays. Wait a sec...
+    # Ensure gym shoes are added to backpack if it's a gym day(ie Monday and Thursday)
+
     if day_of_week == 'monday' || day_of_week == 'thursday'
       #add gym shoes to items
       @items << 'gym shoes'
@@ -39,7 +39,7 @@ class Backpack
     if day_of_week != 'saturday' && day_of_week != 'sunday'
       @items << 'packed lunch'
     elsif false
-      # Used to bring snacks on weekend trips, but now I just buy 'em
+      # Pack Snacks for Weekend trips
       @items << 'snacks'
     end
   end
